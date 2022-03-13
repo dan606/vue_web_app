@@ -1,10 +1,4 @@
 <template>
-  <!--<nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/mypage">MyPage</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>-->
-
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Logo</a>
@@ -14,18 +8,34 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-              <router-link @click="homeClick" :class="homeLinkClass" to="/">Home</router-link> 
+              <router-link :class="homeLinkClass" to="/">Home</router-link> 
           </li>
           <li class="nav-item">
-              <router-link @click="mypageClick" :class="mypageLinkClass" to="/mypage">MyPage</router-link>
+              <router-link :class="mypageLinkClass" to="/mypage">MyPage</router-link>
           </li>
           <li class="nav-item">
-              <router-link @click="aboutClick" :class="aboutLinkClass" to="/about">About</router-link>
+              <router-link :class="aboutLinkClass" to="/about">About</router-link>
           </li>  
+
+<!--          
+          <li class="nav-item">
+            <b-nav-item class='active-class' to="/">Home</b-nav-item>
+          </li>  
+
+          <li class="nav-item">
+            <b-nav-item class='active-class' to="/mypage">MyPage</b-nav-item> 
+          </li>  
+
+          <li class="nav-item">
+            <b-nav-item to="/about">About</b-nav-item> 
+          </li>  
+-->
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Link</a></li>
+              <li><router-link class="dropdown-item" to="/mypage">MyPage</router-link></li>
               <li><a class="dropdown-item" href="#">Another link</a></li>
               <li><a class="dropdown-item" href="#">A third link</a></li>
             </ul>
@@ -37,8 +47,33 @@
   <router-view/>
 </template>
 
-<script>
+<!--
+<template>
+  <b-navbar toggleable="md" type="dark" variant="dark">
+    <b-navbar-nav>
+      <b-nav-item class='active-class' to="/">Home</b-nav-item>
+      <b-nav-item to="/about">About</b-nav-item> 
+     <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <b-nav-item href="/about" to="/about">Explore</b-nav-item>
+      <b-nav-item-dropdown text="Lang" right>
+        <b-dropdown-item href="#">EN</b-dropdown-item>
+        <b-dropdown-item href="#">ES</b-dropdown-item>
+        <b-dropdown-item href="#">RU</b-dropdown-item>
+        <b-dropdown-item href="#">FA</b-dropdown-item>
+      </b-nav-item-dropdown>
 
+      <b-nav-item-dropdown text="User" right>
+        <b-dropdown-item href="#">Account</b-dropdown-item>
+        <b-dropdown-item href="#">Settings</b-dropdown-item>
+      </b-nav-item-dropdown>
+    </b-navbar-nav>
+  </b-navbar>
+  <router-view/>
+</template>
+-->
+
+<script>
 
 export default {
   name: 'TST',
@@ -67,35 +102,35 @@ export default {
 
   },
   methods: {
-    homeClick()
-    {
-      this.homeLinkClass = 'nav-link active'
-      this.mypageLinkClass = 'nav-link'
-      this.aboutLinkClass = 'nav-link'
-    },
-    mypageClick()
-    {
-      this.homeLinkClass = 'nav-link'
-      this.mypageLinkClass = 'nav-link active'
-      this.aboutLinkClass = 'nav-link'
-    },
-    aboutClick()
-    {
-      this.homeLinkClass = 'nav-link'
-      this.mypageLinkClass = 'nav-link'
-      this.aboutLinkClass = 'nav-link active'
-    }
   },
     watch:{
     $route (to, from){
-        this.show = false;
         console.log(to);
         if(to.name === 'about')
         {
           console.log("IS ABOUT");
+          this.homeLinkClass = 'nav-link'
+          this.mypageLinkClass = 'nav-link'
+          this.aboutLinkClass = 'nav-link active'
+        }
+
+        if(to.name === 'mypage')
+        {
+          console.log("MY PAGE");
+          this.homeLinkClass = 'nav-link'
+          this.mypageLinkClass = 'nav-link active'
+          this.aboutLinkClass = 'nav-link'
+        }
+
+        if(to.name === 'home')
+        {
+          console.log("HOME");
+          this.homeLinkClass = 'nav-link active'
+          this.mypageLinkClass = 'nav-link'
+          this.aboutLinkClass = 'nav-link'
         }
     }
-}
+  }
 }
 
 </script>
