@@ -76,9 +76,9 @@ export default {
 
 <style>
 nav {
-  padding: 30px;
-  background: #000000;
-  text: #FFFFFF;
+  padding: 100px;
+  background: #FF0000;
+  text: #FF0000;
 }
 
 nav a {

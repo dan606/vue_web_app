@@ -13,6 +13,9 @@ export default {
   name: 'HomeView',
   components: {
     HelloWorld
-  }
+  },
+  created() {
+    document.body.style.backgroundColor = "#00FF00";
+  },
 }
 </script>
