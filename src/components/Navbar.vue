@@ -17,11 +17,11 @@
               <router-link :class="aboutLinkClass" to="/about">About</router-link>
           </li>  
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projects</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Link</a></li>
               <li><router-link class="dropdown-item" to="/mypage">MyPage</router-link></li>
-              <li><a class="dropdown-item" href="#">Another link</a></li>
+              <li><router-link class="dropdown-item" to="/hello">hello</router-link></li>
               <li><a class="dropdown-item" href="#">A third link</a></li>
             </ul>
           </li>
