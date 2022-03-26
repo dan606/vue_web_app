@@ -1,11 +1,10 @@
-
 <template>
       <p class="LAMA">{{ msg }}</p>
       <br>
       <p>{{ users }}</p>
       <p>{{ t('message') }}</p>
       <br>
-      <h1>{{ info }}</h1>
+      <h1 :style="{ color: infoColor}">{{ info }}</h1>
       <p>{{ cssPath }}</p>
       <br>
       <button id="btn" type="button" class="btn btn-primary" v-on:click="sendPost">Send post</button> 
@@ -24,7 +23,8 @@ export default {
   data() {
     return {
     info: this.foo,
-    users: {}
+    users: {},
+    infoColor: 'red',
     }
   },
   setup() {
@@ -50,6 +50,7 @@ export default {
     },
     sendPost() {
       console.log("send post")
+      this.infoColor = 'blue';
       axios({
         method: 'post',
         url: 'http://localhost:3000/login',
