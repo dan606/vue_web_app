@@ -16,6 +16,8 @@
           <li class="nav-item">
               <router-link :class="aboutLinkClass" to="/about">About</router-link>
           </li>  
+          <button id="btn4" type="button" class="btn btn-primary" v-on:click="this.$root.setTheme1();">Switch theme1</button>      
+          <button id="btn5" type="button" class="btn btn-primary" v-on:click="this.$root.setTheme2();">Switch theme2</button>    
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projects</a>
             <ul class="dropdown-menu">

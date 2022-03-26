@@ -1,6 +1,6 @@
 <template>
+  <link rel="stylesheet" type="text/css" :href=cssPath>
   <NavbarView/>
-  <p>{{ global }}</p>
   <router-view/>
 </template>
 
@@ -15,22 +15,40 @@
     components: {
       NavbarView
     },
+    data() {
+      return {
+      cssPath: '',
+      globalData: 'GLOBAL TEXT'
+      }
+    },
     methods: {
       lamaCall()
       {
-        console.log("LAMA CALL")
-      }
-    },
-    data() {
-      return
-      {
-        globalData: "GLOBAL TEXT"
+        console.log("LAMA CALL");
+      },
+      setTheme1() {
+        console.log("SET THEME 1");
+        this.cssPath = "css/theme1.css";
+      },
+      setTheme2() {
+        console.log("SET THEME 2");
+        this.cssPath = "css/theme2.css";
       }
     },
     mounted() {
-      //this.loadUsers();
-      //appendFile();
-      console.log("MOUNTED APP")
+      console.log("MOUNTED APP");
+
+      if (localStorage.cssPath) {
+        this.cssPath = localStorage.cssPath;
+      }
+      else {
+        this.setTheme1();
+      }
+    },
+    watch: {
+      cssPath(newCssPath) {
+        localStorage.cssPath = newCssPath;
+      }
     }
   }
 
