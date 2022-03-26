@@ -15,7 +15,7 @@ export default {
     TrPage
   },
   created() {
-    document.body.style.backgroundColor = "#FFFFFF";
+    //document.body.style.backgroundColor = "#FFFFFF";
   },
 }
 </script>

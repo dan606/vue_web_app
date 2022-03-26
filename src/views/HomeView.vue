@@ -15,7 +15,7 @@ export default {
     HelloWorld
   },
   created() {
-    document.body.style.backgroundColor = "#00FF00";
+    //document.body.style.backgroundColor = "#00FF00";
   },
 }
 </script>

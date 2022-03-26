@@ -13,9 +13,6 @@ export default {
   name: 'MyPageView',
   components: {
     MyPage
-  },
-  created() {
-    document.body.style.backgroundColor = "#FF0000";
-  },
+  }
 }
 </script>

@@ -1,5 +1,6 @@
 <template>
   <NavbarView/>
+  <p>{{ global }}</p>
   <router-view/>
 </template>
 
@@ -15,8 +16,24 @@
       NavbarView
     },
     methods: {
+      lamaCall()
+      {
+        console.log("LAMA CALL")
+      }
+    },
+    data() {
+      return
+      {
+        globalData: "GLOBAL TEXT"
+      }
+    },
+    mounted() {
+      //this.loadUsers();
+      //appendFile();
+      console.log("MOUNTED APP")
     }
   }
+
 </script>
 
 <style>
@@ -25,6 +42,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    /*color: #2c3e50;*/
   }
 </style>
