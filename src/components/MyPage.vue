@@ -83,7 +83,10 @@ export default {
       console.log("MOUNTED MY PAGE");
       if (localStorage.cssPath) {
         this.cssPath = localStorage.cssPath;
-    }
+      }
+      else {
+        this.setTheme1();
+      }
   },
   created() {
     //document.body.style.backgroundColor = "#FF0000";
