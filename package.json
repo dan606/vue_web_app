@@ -8,6 +8,7 @@
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
   },
   "dependencies": {
+    "@kouts/vue-modal": "^3.0.2",
     "axios": "^0.26.1",
     "jenesius-vue-modal": "^1.5.0",
     "vue": "^3.2.13",
