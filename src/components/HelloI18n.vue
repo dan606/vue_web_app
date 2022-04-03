@@ -1,12 +1,13 @@
 <template>
-  <p>{{ t('hello') }}</p>
-  <br>
+   <widget-container-modal/>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 import axios from 'axios'
+import {openModal, container} from "jenesius-vue-modal";
+import ModalWindow from "./ModalWindow.vue"
 
   export default {
   name: 'HelloI18n',
@@ -19,9 +20,14 @@ import axios from 'axios'
     // Something todo ..
 
     return { t }
-  }
+  },
+  mounted(){
+    openModal(ModalWindow, {
+        title: "Hello world!"
+    })
+  },
+  components: {WidgetContainerModal: container}
 }
-
 </script>
 
 <i18n>
