@@ -1,5 +1,8 @@
 <template>
+  <p>{{ t('hello') }}</p>
+  <button @click = "openModalWindow">Open MODAL</button>
    <widget-container-modal/>
+
 </template>
 
 <script>
@@ -26,7 +29,16 @@ import ModalWindow from "./ModalWindow.vue"
         title: "Hello world!"
     })
   },
-  components: {WidgetContainerModal: container}
+  components: {WidgetContainerModal: container},
+  methods:
+  {
+    openModalWindow()
+    {
+        openModal(ModalWindow, {
+        title: "Hello world!"
+    })
+    }
+  }
 }
 </script>
 
