@@ -3,12 +3,9 @@
   <button @click = "openModalWindow">Open MODAL</button>
    <widget-container-modal/>
 
-   <button type="button" class="btn btn-primary" @click="showModal=true">
-  Open a modal
-</button>
-
-<Modal v-model="showModal" title="My first modal">
-  <p>Modal content goes here...</p>
+  <button type="button" class="btn btn-primary" @click="showModal=true">Open a modal</button>
+  <Modal v-model="showModal" :title="t('settings')">
+  <VueModalWindow/>
 </Modal>
 
 
@@ -20,6 +17,7 @@ import { useI18n } from 'vue-i18n'
 import axios from 'axios'
 import {openModal, container} from "jenesius-vue-modal";
 import ModalWindow from "./ModalWindow.vue"
+import VueModalWindow from "./VueModalWindow.vue"
 
 import VueModal from '@kouts/vue-modal'
 import '@kouts/vue-modal/dist/vue-modal.css'
@@ -36,13 +34,9 @@ import '@kouts/vue-modal/dist/vue-modal.css'
 
     return { t }
   },
-  mounted(){
-    openModal(ModalWindow, {
-        title: "Hello world!"
-    })
-  },
   components: {WidgetContainerModal: container,
-                    'Modal': VueModal},
+                    'Modal': VueModal,
+                    VueModalWindow: VueModalWindow},
   methods:
   {
     openModalWindow()
@@ -59,11 +53,3 @@ import '@kouts/vue-modal/dist/vue-modal.css'
   }
 }
 </script>
-
-<i18n>
-{
-  "en": {
-    "hello": "Hello i18n in SFC!"
-  }
-}
-</i18n>
