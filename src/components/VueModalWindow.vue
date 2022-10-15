@@ -1,7 +1,7 @@
 <template>
         <p>{{t('settings')}}</p>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email" v-model="mail">
-        <input type="password" class="form-control" id="exampleFormControlInput2" placeholder="password" v-model="password">
+        <input type="email" class="form-control" id="emailInput" placeholder="email" v-model="mail">
+        <input type="password" class="form-control" id="passwordInput" placeholder="password" v-model="password">
         <button type="button" class="btn btn-primary" @click="login">Login</button>
 </template>
 

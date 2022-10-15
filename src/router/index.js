@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import MyPageView from '../views/MyPageView.vue'
 import HelloView from '../views/HelloView.vue'
+import PageNotFound from '../views/PageNotFound.vue'
 
 const routes = [
   {
@@ -36,7 +37,9 @@ const routes = [
     //   return import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
     // }
     component: HelloView
-  }
+  },
+  { path: '/:pathMatch(.*)*', name: 'not-found', component: PageNotFound },
+  { path: '/:pathMatch(.*)', name: 'bad-not-found', component: PageNotFound },
 ]
 
 const router = createRouter({
