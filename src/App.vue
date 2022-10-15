@@ -33,37 +33,43 @@
       setTheme2() {
         console.log("SET THEME 2");
         this.cssPath = "css/theme2.css";
+      },
+      getMediaPreference() {
+        const hasDarkPreference = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        if (hasDarkPreference) {
+          return "dark-theme";
+        } else {
+          return "light-theme";
+        }
+      },
+      setTheme(theme) {
+        localStorage.setItem("user-theme", theme);
+        this.userTheme = theme;
+        document.documentElement.className = theme;
+      },
+      toggleTheme() {
+        const activeTheme = localStorage.getItem("user-theme");
+        if (activeTheme === "light-theme") {
+          this.setTheme("dark-theme");
+        } else {
+          this.setTheme("light-theme");
+        }
+      },
+      getTheme() {
+        return localStorage.getItem("user-theme");
       }
+
+
     },
     mounted() {
       console.log("MOUNTED APP");
 
-    var requestUrl = "http://ip-api.com/json";
+      console.log(this.getMediaPreference());
 
-    $.ajax({
-      url: requestUrl,
-      type: 'GET',
-      success: function(json)
-      {
-        console.log("My country is: " + json.country);
-      },
-      error: function(err)
-      {
-        console.log("Request failed, error= " + err);
-      }
-    });
-
-
-      axios.get('http://ip-api.com/json')
-      .then(function (response) {
-        // handle success
-        console.log(response);
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-
+      const initUserTheme = this.getTheme() || this.getMediaPreference();
+      this.setTheme(initUserTheme);
 
       if (localStorage.cssPath) {
         this.cssPath = localStorage.cssPath;
