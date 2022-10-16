@@ -2,7 +2,6 @@
   <link rel="stylesheet" type="text/css" :href=cssPath>
   <NavbarView/>
   <router-view/>
-  <HelloI18n/>
 </template>
 
 <script>

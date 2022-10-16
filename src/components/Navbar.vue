@@ -30,13 +30,16 @@
         </ul>
       </div>
     </div>
+    <LocaleSwitcher/>
   </nav>
 </template>
 
 <script>
+import LocaleSwitcher from "./LocaleSwitcher.vue";
 export default {
   name: 'Navbar',
   components: {
+    LocaleSwitcher
   },
     data() {
     return {
@@ -80,7 +83,7 @@ export default {
 nav {
   padding: 100px;
   background: #FF0000;
-  text: #FF0000;
+  /* text: #FF0000; */
 }
 
 nav a {

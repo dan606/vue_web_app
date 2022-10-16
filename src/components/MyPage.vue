@@ -2,7 +2,7 @@
       <p class="LAMA">{{ msg }}</p>
       <br>
       <p>{{ users }}</p>
-      <p>{{ $t("message") }}</p>
+      <p>{{ $t("description") }}</p>
       <br>
       <h1 :style="{ color: infoColor}">{{ info }}</h1>
       <p>{{ cssPath }}</p>
@@ -39,6 +39,7 @@ export default {
       )
     },
     sendPost() {
+      this.$i18n.locale = "en";
       console.log("send post")
       this.infoColor = 'blue';
       axios({

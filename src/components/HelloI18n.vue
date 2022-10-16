@@ -1,6 +1,6 @@
 <template>
   <h1>{{ $t("hello") }}</h1>
-  <p>{{ $t("messsage") }}</p>
+  <p>{{ $t("description") }}</p>
   <!-- <LocaleSwitcher /> -->
 </template>
 
