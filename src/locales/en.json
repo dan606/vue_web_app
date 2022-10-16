@@ -1,5 +1,5 @@
 {
-  "hello": "hello",
-  "settings": "settings",
-  "message": "hello i18n !!"
+  "title": "Vue 3 i18n",
+  "description": "A Vue i18n next example using vue-i18n-next",
+  "hello": "EN HELLO"
 }

@@ -13,9 +13,6 @@ import i18n from './i18n'
 //     error => console.log(error)
 // )
 
-const app = createApp(App)
-
-app.config.globalProperties.foo = 'bar'
-app.use(i18n)
-app.use(router)
-app.mount('#app')
+createApp(App).use(router).use(i18n).mount('#app')
+//const app = createApp(App).use(router).use(i18n).mount('#app')
+//app.config.globalProperties.foo = 'bar'

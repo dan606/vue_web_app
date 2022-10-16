@@ -2,10 +2,12 @@
   <link rel="stylesheet" type="text/css" :href=cssPath>
   <NavbarView/>
   <router-view/>
+  <HelloI18n/>
 </template>
 
 <script>
   import NavbarView from './components/Navbar'
+  import HelloI18n from "./components/HelloI18n.vue";
 
   export default {
     name: 'App',
@@ -13,7 +15,8 @@
       msg: String
     },
     components: {
-      NavbarView
+      NavbarView,
+      HelloI18n
     },
     data() {
       return {

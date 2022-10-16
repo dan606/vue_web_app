@@ -1,14 +1,13 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
+module.exports = {
   pluginOptions: {
     i18n: {
-      locale: 'cs',
-      fallbackLocale: 'cs',
-      localeDir: 'locales',
+      locale: "cz",
+      fallbackLocale: "en",
+      localeDir: "locales",
       enableLegacy: false,
       runtimeOnly: false,
       compositionOnly: false,
-      fullInstall: true
-    }
-  }
-})
+      fullInstall: true,
+    },
+  },
+};
