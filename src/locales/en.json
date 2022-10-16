@@ -1,3 +1,5 @@
 {
+  "hello": "hello",
+  "settings": "settings",
   "message": "hello i18n !!"
 }
