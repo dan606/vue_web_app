@@ -1,46 +1,47 @@
 <template>
-        <p>{{t('settings')}}</p>
+        <h1>{{ $t("hello") }}</h1>
+        <h2>{{ text }}</h2>
         <input type="email" class="form-control" id="emailInput" placeholder="email" v-model="mail">
         <input type="password" class="form-control" id="passwordInput" placeholder="password" v-model="password">
         <button type="button" class="btn btn-primary" @click="login">Login</button>
 </template>
 
 <script>
-import { useI18n } from 'vue-i18n'
 import axios from 'axios'
-
 export default {
 	name: "VueModal",
-    setup() {
-        const { t } = useI18n({
-        inheritLocale: true,
-        useScope: 'local'
-        })
-
-        // Something todo ..
-
-        return { t }
-    },
     data() 
     {
         return {
             mail: '',
-            password: ''
+            password: '',
+            text: 'LAMPA'
         }
     },
     methods: {
+        loadUsers() {
+            console.log("get users")
+            axios.get("http://localhost:3000/users")
+            .then(
+                response => {this.text = response}
+            )
+            .catch(
+                error => console.log(error)
+            )
+        },
         login() {
-        console.log("send login")
-        //this.infoColor = 'blue';
-        axios({
-            method: 'post',
-            url: 'http://localhost:3000/login',
-            data: {
-            name: this.mail,
-            password: this.password
-            }
-        });
-      }
+
+            axios.post("http://localhost:3000/login", {
+                name: this.mail,
+                password: this.password
+            })
+            .then(
+                response => {this.text = response.data, console.log(response)}
+            )
+            .catch(
+                error => console.log(error)
+            )
+        }
     }
 }
 </script>
