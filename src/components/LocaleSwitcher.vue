@@ -10,7 +10,7 @@
 export default {
   name: "LocaleSwitcher",
   data() {
-    return { locales: ["cz", "en"] };
+    return { locales: ["cs", "en"] };
   },
 };
 </script>

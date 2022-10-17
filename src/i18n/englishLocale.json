@@ -1,0 +1,537 @@
+{
+  "days": {
+    "Su": "Su",
+    "M": "M",
+    "Tu": "Tu",
+    "W": "W",
+    "Th": "Th",
+    "F": "F",
+    "S": "S"
+  },
+  "months": {
+    "January": "January",
+    "February": "February",
+    "March": "March",
+    "April": "April",
+    "May": "May",
+    "June": "June",
+    "July": "July",
+    "August": "August",
+    "September": "September",
+    "October": "October",
+    "November": "November",
+    "December": "December"
+  },
+  "login": {
+    "Username": "Username",
+    "Password": "Password",
+    "Login": "Login",
+    "ModalTitle": "Login",
+    "ModalHeadline": "Wrong login credentials"
+  },
+  "infoPanel": {
+    "Operator": "Operator",
+    "Logout": "Logout",
+    "SystemStop": " STOP ",
+    "SystemStart": " START ",
+    "Menu": {
+      "escape": "Escape",
+      "enter": "Enter",
+      "settingsStation": "Mode CS",
+      "infoCS": "Info CS",
+      "system": "System CS",
+      "currentCourse": "Exchange rates",
+      "stocks": "Stock status",
+      "tanks": "Tank conditions",
+      "registers": "Stocks of sales registers",
+      "help": "Help",
+      "typeDispenser": "Dispenser mode"
+    }
+  },
+  "dispensers": {
+    "Pos": "Pos.",
+    "TitleModal": "Choose transaction",
+    "TitleModalMenuDispenser": "Dispenser operation settings",
+    "Type": {
+      "B": "OctoMat",
+      "F": "Free",
+      "M": "Manually",
+      "P": "Prepaid",
+      "E": "Error",
+      "S": "One",
+      "X": "Stop"
+    },
+    "Status": {
+      "A": "",
+      "B": "Stoped",
+      "I": "Free",
+      "C": "Pay",
+      "P": "Prepaid",
+      "R": "Free",
+      "E": "Error",
+      "S": "Stop",
+      "X": "Attention",
+      "M": "Manually",
+      "F": "Pumping",
+      "W": "Ready",
+      "U": "Closed",
+      "N": "Unavailable"
+    }
+  },
+  "otherFunction": {
+    "ManualPHM": "Manual PHM",
+    "TrialPHM": "Sample PHM",
+    "RevolvePHM": "Rewind PHM",
+    "ReceiptList": "Receipt List",
+    "TitleModalManual": "Select a dispenser number",
+    "TitleModalTrial": "Sample Fuel",
+    "TitleModalRevolve": "Rewind PHM",
+    "ReceiptNew": "New receipt",
+    "ReceiptTake": "Take receipt",
+    "TitleModalReceiptList": "List of completed receipts",
+    "TitleModalTakeReceiptList": "Select pending Receipt",
+    "TitleModalMyReceiptList": "Select your pending receipt",
+    "ShiftSale": "Sales",
+    "DepositWithdrawal": "Deposit / Withdrawal",
+    "TitleModalDepositWithdrawal": "Deposit / Withdrawal",
+    "SearchGoods": "Search for goods",
+    "Other": "undetermined",
+    "MyReceiptsList": "My Receipts",
+    "PossumList": "List of deadlines",
+    "PossumCreate": "New Deadline"
+  },
+  "homeScreen": {
+    "somethingWentWrong": "Something went wrong",
+    "tryAgain": "Try again"
+  },
+  "receipt": {
+    "PlaceholderAddItem": "Add Item",
+    "PlaceholderEmpty": "Empty receipt",
+    "Receipt": "Receipt",
+    "Table": {
+      "ID": "ID",
+      "PLU": "PLU",
+      "name": "Name",
+      "count": "Amount",
+      "priceUnit": "Price/u.",
+      "price": "Price",
+      "remove": "Remove",
+      "page": "Page",
+      "space": "space",
+      "total": "total",
+      "items": "items",
+      "noRecords": "Records not found"
+    },
+    "FleetCard": "Discount Card",
+    "PayCash": "Cash payment",
+    "CardLimitExceeded": "Card limit exceeded",
+    "FleetCardNumber": "Discount Card No.",
+    "DiscountCouponAlreadyAdded": "This discount card has been already added to the receipt",
+    "DiscountCouponSameType": "Two cards of the same type cannot be entered on the receipt",
+    "CardOnlineAuth": "The card has been authorized online",
+    "CardOfflineAuth": "The card has been authorized offline",
+    "FleetCardNotFound": "Invalid fleet card",
+    "FleetCardAlreadyAdded": "Fleet card has been already added",
+    "PayExtraInCash": "Pay in cash",
+    "CancelOrderQuestion": "Are you sure you want to cancel the order?",
+    "AddFleetCardManually": "Enter manually",
+    "FleetCardWaiting": "Waiting for card to be attached",
+    "BankCardWaiting": "Waiting for payment on the payment terminal",
+    "FleetCardAuthorization": "Fleet card authorization in progress",
+    "FleetCardPairDriver": "Enter associated driver card",
+    "FleetCardPairVehicle": "Enter the associated vehicle card",
+    "NotAFleetCard": "This is not a fleet card",
+    "SameFleetCard": "Cannot use card already specified",
+    "DiscountCouponNotFound": "Discount card not found",
+    "Authorization": "Authorization",
+    "InvalidPin": "Invalid pin",
+    "ItemNotAvailable": "Item not available",
+    "Currency": {
+      "euro": "Eur",
+      "kc": "CZK"
+    },
+    "Total": "Total",
+    "TitleModalTotal": "Set amount",
+    "TitleTab": "Account:"
+  },
+  "SystemMessage": "System message",
+  "Yes": "Yes",
+  "No": "No",
+  "saveScreen": {
+    "openGui": "Start shopping"
+  },
+  "sidePanel": {
+    "SearchGoods": "Search goods",
+    "Print": "Print",
+    "OtherFunctions": "Other functions",
+    "ListStock": "Selected goods",
+    "Voucher": "Voucher",
+    "WAG": "WAG card",
+    "FleetCard": "Fleet card",
+    "Card": "Bank card",
+    "LocalCard": "Local card",
+    "Cash": "Cash",
+    "Euro": "Euro",
+    "CancelOrder": "Cancel order",
+    "TitleModalOtherFunction": "Other functions",
+    "TitleModalListStock": "Choose goods type"
+  },
+  "loadingScreen": {
+    "Loading": "App loading"
+  },
+  "modal": {
+    "LoadingModal": {
+      "headers": {
+        "ticketPrinting": "Ticket printing"
+      },
+      "printWaiting": "Payment was successful. Printing tickets..."
+    },
+    "Warning": {
+      "title": "Important"
+    },
+    "Error": {
+      "missingGoods": "Lack of goods"
+    },
+    "Return": {
+      "setEnter": "Set",
+      "setEsc": "Cancel"
+    },
+    "TransactionSelect": {
+      "Table": {
+        "ID": "ID",
+        "name": "Name",
+        "count": "Volume",
+        "priceUnit": "Price/u.",
+        "price": "Price",
+        "locked": "Availability"
+      },
+      "operator": "Checkout No."
+    },
+    "ModalAmountItem": {
+      "amount": "Quantity",
+      "save": "Save",
+      "errorAmount": "Quantity must be entered",
+      "errorNumber": "Enter number only",
+      "errorAmountZero": "Quantity cannot be set to 0"
+    },
+    "DispenserGoodSelect": {
+      "headline": "Select fuel type on dispenser No.",
+      "pistol": "Pistol",
+      "modalGoodVolumeTitle": "Enter the number of liters",
+      "modalGoodVolumeHeadline": "Dispenser"
+    },
+    "DispenserGoodVolumeSelect": {
+      "volume": "Liters",
+      "confirm": "Confirm",
+      "errorVolume": "Quantity must be entered",
+      "errorNumber": "Enter number only"
+    },
+    "SelectDispenser": {
+      "modalGoodSelectTitle": "Select fuel type",
+      "modalGoodSelectHeadline": "Dispenser"
+    },
+    "TrialPHM": {
+      "title": "PHM sample",
+      "headline": "Are you sure you want to close the receipt as a sample?",
+      "yes": "Confirm",
+      "no": "Cancel"
+    },
+    "RevolvePHM": {
+      "title": "Rewind PHM",
+      "headline": "Are you sure you want to close the receipt as a rewind?",
+      "yes": "Confirm",
+      "no": "Cancel"
+    },
+    "PrintTicket": {
+      "printTicket": "Print ticket",
+      "printTicketGroup": "Print a group ticket"
+    },
+    "ReceiptList": {
+      "table": {
+        "id": "ID",
+        "number": "Receipt number",
+        "date": "Date",
+        "type": "Receipt type",
+        "payment": "Payment",
+        "price": "Price",
+        "product": "Name",
+        "dispenser": "Dispenser",
+        "group": "Group",
+        "amount": "Amount",
+        "unitPrice": "Price/u.",
+        "totalPrice": "Total CZK",
+        "discount": "Discount",
+        "operator": "Operator",
+        "reference": "Ref. account",
+        "reason": "Reason",
+        "terminal": "Terminal",
+        "authCode": "Auth. code",
+        "name": "Name",
+        "cardNumber": "Card number",
+        "refNumber": "Ref number",
+        "validTo": "Valid",
+        "plu": "PLU",
+        "totalCount": "Number of records"
+      },
+      "reclamatonReset": "Reset",
+      "cantRemoveItemReclamation": "Unable",
+      "cantAddItemsReclamation": "Items cannot be inserted in reclamation mode",
+      "ReclamationQuestion": "Are you sure you want to complaint the goods for this receipt?",
+      "cancelError": "Cancellation cannot be completed",
+      "insufficientStocks": "Total only available",
+      "cannotRemovePHM": "Cannot complaint fuel",
+      "nothingToBeRemoved": "You did not remove any items",
+      "cannotAddItem": "Cannot add items",
+      "ReclamationAllItems": "Are you sure you want to complaint all receipt items?",
+      "receiptListLoading": "Receiving receipt list",
+      "placeholderNoItem": "Receipt list is empty",
+      "searchReceipt": "Receipt Search",
+      "detailHeadline": "Detail of completed receipt",
+      "ChangePayConfirm": "Are you sure you want to change the payment?",
+      "CancelConfirm": "Are you sure you want to cancel the payment?",
+      "ReclamationConfirm": "Are you sure you want to complaint the following goods?",
+      "ReclamationCancel": "Are you sure you want to cancel the complaint?",
+      "cancelReturnPHM": "In case of CANCELLATION, the following items will be returned to the dispenser",
+      "reclamationMessage": "RETURN to customer for CARD COMPLAINT",
+      "cancelMessage": "RETURN to the customer for CANCELLATION receipts",
+      "ReceiptAlreadyCanceled": "This receipt has already been canceled",
+      "ReceiptCantModify": "Receipt cannot be edited",
+      "button": {
+        "Reclamation": "Complaint",
+        "Storno": "Cancellation",
+        "ChangePay": "Change Payment",
+        "Print": "Print",
+        "Search": "Search"
+      }
+    },
+    "TakeReceiptsList": {
+      "table": {
+        "number": "Number",
+        "user": "Operator",
+        "price": "Price"
+      },
+      "title": "Are you sure you want to take over the receipt?",
+      "content": "Receipt number:",
+      "yes": "I agree",
+      "no": "Cancel",
+      "placeholderNoItem": "There is no receipt to take over"
+    },
+    "MyReceiptsList": {
+      "table": {
+        "number": "Number",
+        "user": "Operator",
+        "price": "Price"
+      },
+      "title": "Are you sure you want to open this receipt?",
+      "content": "Receipt number:",
+      "yes": "I agree",
+      "no": "Cancel",
+      "placeholderNoItem": "You have no pending receipt"
+    },
+    "DepositWithdrawal": {
+      "headline": "Select financial operation",
+      "labelDeposit": "Deposit",
+      "labelWithdrawal": "Selection",
+      "labelAmount": "Amount",
+      "labelPurpose": "Purpose",
+      "errorAmount": "Amount required",
+      "errorPurpose": "The purpose of the operation must be specified",
+      "confirm": "Confirm"
+    },
+    "TypeDispenser": {
+      "title": "Select dispenser control type",
+      "headline": "Select control settings for dispenser number:",
+      "modeF": "Automatic Enable",
+      "modeR1": "Allow only 1 transaction at a time",
+      "modeR": "Allow everything manually",
+      "modeB": "Authorization is controlled by octomat",
+      "manuallyRequired": "The dispenser must be manually enabled to enable dispensing",
+      "availableAfterPreviousPayment": "The dispenser will be released for further refueling after payment of the previous transaction",
+      "automatic": "The dispenser is released for further refueling automatically. If the parameter enabling the transaction queue is set in the warehouse module, then it is possible to refuel again immediately after hanging the pistol ",
+      "paymentAutomatic": "The release of the dispenser is controlled by a payment machine, intended for unattended operation of the dispenser."
+    },
+    "ModeDriving": {
+      "title": "Select CS mode",
+      "headline": "",
+      "automat": "Automatic",
+      "POS": "Checkout",
+      "settings": "Settings between different filling station control modes",
+      "switch": "Dispensers will be switched to unattended operation",
+      "control": "Dispensers will be controlled by CS service"
+    },
+    "MenuDispenser": {
+      "title": "dispenser operator settings",
+      "headline": "dispenser operator number:",
+      "menu1": "dispenser mode",
+      "menu2": "Unlock dispenser",
+      "menu3": "Enable dispenser",
+      "menu4": "Set subscription",
+      "menu5": "Fuel distribution",
+      "menu6": "Block dispenser",
+      "menu7": "Cancel perm. dispenser ",
+      "menu8": "Cancel subscription"
+    },
+    "SearchGoods": {
+      "title": "Product Search",
+      "headline": "Enter name, PLU or EAN code",
+      "errorSearch": "Search term is required",
+      "search": "Search",
+      "resultTable": "More items found, select from list",
+      "confirm": "Search",
+      "newSearch": "New Search",
+      "table": {
+        "id": "ID",
+        "amount": "Amount",
+        "unitPrice": "Price/u.",
+        "name": "Name",
+        "plu": "PLU"
+      }
+    },
+    "PayCard": {
+      "titleCard": "Bank card payment",
+      "titleFleet": "Fleet card payment",
+      "titleVoucher": "Discount coupon/voucher",
+      "headline": "Enter card number",
+      "errorTyping": "Card number is required",
+      "pay": "Pay",
+      "voucher": "Insert",
+      "change": "Insert",
+      "titleCashBack": "Cash Amount",
+      "amount": "Enter cash amount",
+      "errorAmount": "Quantity must be entered",
+      "errorNumber": "Enter number only",
+      "cashBackCard": "Card refund"
+    },
+    "ViewTableList": {
+      "messageList": {
+        "title": "Control system status",
+        "type": "#",
+        "date": "Last change",
+        "message": "Guarded event",
+        "state": "Message status",
+        "octo": "Show on Octomat",
+        "send": "Alert sent",
+        "placeholderNoItem": "There are no messages."
+      },
+      "registerList": {
+        "title": "Status of sales registers",
+        "product": "Product",
+        "value": "Value",
+        "date": "Date and time",
+        "placeholderNoItem": "No registries attached."
+      },
+      "tanksList": {
+        "title": "Stocks of tanks",
+        "id": "ID",
+        "product": "Product",
+        "typeContent": "Measurement type",
+        "volume": "Volume [Lt]",
+        "max": "Fulfillment [%]",
+        "min": "Curl [Lt]",
+        "placeholderNoItem": "No tanks connected."
+      },
+      "courseList": {
+        "title": "Current exchange rate list",
+        "currency": "Currency",
+        "recal": "Recalculation",
+        "startValid": "Valid from",
+        "endValid": "Valid until",
+        "placeholderNoItem": "No course set"
+      }
+    },
+    "HelpList": {
+      "title": "System help"
+    },
+    "InfoCs": {
+      "title": "System Information",
+      "gpos": "GUI version",
+      "db": "Version of DB procedures",
+      "source": "Data source",
+      "lastReceipt": "Last receipt"
+    },
+    "StockStatusModal": {
+      "title": "Stock status of goods",
+      "headline": "Enter PLU or EAN code of the goods",
+      "errorSearch": "It is necessary to enter the searched goods",
+      "search": "Search",
+      "resultTable": "Warehouse found",
+      "resultTableNone": "Item not found, repeat search",
+      "table": {
+        "id": "ID",
+        "amount": "Amount",
+        "unitPrice": "Price/u.",
+        "price": "Price",
+        "name": "Name",
+        "plu": "PLU",
+        "type": "-"
+      }
+    },
+    "HotStock": {
+      "title": "Choose the type of goods",
+      "headline": "Selected dry goods",
+      "headline2": "Returnable packaging"
+    },
+    "DefaultModal": {
+      "shiftSaleTitle": "Total Sales",
+      "shiftSaleLabel": "Total revenue per shift:",
+      "shiftSaleCurrency": "CZK",
+      "shiftSaleMessage": "(taking into account cashback and deposits/withdrawals)",
+      "pin": "PIN to card",
+      "errorPin": "Pin value is required",
+      "errorNumber": "Enter number only",
+      "send": "Send",
+      "showPayCard": "Enter card number",
+      "titleChangeCard": "Enter original credit card",
+      "pinSuccess": "Card payment was successful"
+    },
+    "PossumList": {
+      "table": {
+        "id": "ID",
+        "totalCount": "Number of records",
+        "startValid": "Valid from",
+        "endValid": "Valid to",
+        "salesCZK": "Sales CZK",
+        "salesEUR": "Sales EUR",
+        "createdBy": "Created by"
+      },
+      "possumListLoading": "Loading deadline list",
+      "possumListQuestion": "Are you sure you want to create a new deadline?"
+    }
+  },
+  "messages": {
+    "ValidityErrorMessage": "License expired!",
+    "ValidRolesErrorMessage": "You do not have permission to use the application"
+  },
+  "error": {
+    "error": "Unknown error",
+    "no_printer_connection": "Failed to connect to printer",
+    "head_raised": "The print head is raised. Unable to complete purchase",
+    "not_ready": "The printer is not ready to print. Unable to complete purchase",
+    "out_of_paper": "The printer is out of paper. Unable to complete purchase",
+    "printer_status_error": "Printer error. Unable to complete purchase",
+    "ticket_print_not_available": "Printer is not available",
+    "ticket_service_not_available": "Printer is not available",
+    "Message": "Please fill in this field",
+    "local_card_can_be_used_only_in_payment_mode": "Local payment card can only be entered in 'payment status'.",
+    "err_cannot_add_discount_or_surcharge": "Discount or surcharge cannot be added",
+    "err_payment_terminal_offline": "The payment terminal is offline",
+    "err_card_couldnt_be_load": "The card could not be loaded",
+    "err_card_couldnt_be_load_use_magnetic_reader": "The card could not be loaded, use magnetic reader",
+    "err_card_couldnt_be_load_use_rfid_reader": "The card could not be loaded, use RFID reader",
+    "err_not_a_payment_card": "This is not a payment card",
+    "err_payment_terminal": "The payment failed",
+    "declined_by_terminal": "Payment has been cancelled",
+    "operation_cancelled": "Operation has been cancelled",
+    "card_read_error": "Card read error",
+    "payment_timeout": "Payment timeout",
+    "payment_error": "Payment error",
+    "err_signature_does_not_match": "Signature does not match"
+  },
+  "close": "Close",
+  "back": "Back",
+  "modalReturnTitle": "Do you want to use the return?",
+  "modalReturnHeadline": "The system will offer a refund.",
+  "copyright": "Copyright ©",
+  "ownerMyOcto": "YOUR SYSTEM, spol. s r.o. ",
+  "hello": "Hello"
+}
