@@ -39,7 +39,6 @@ export default {
       )
     },
     sendPost() {
-      this.$i18n.locale = "en";
       console.log("send post")
       this.infoColor = 'blue';
       axios({
