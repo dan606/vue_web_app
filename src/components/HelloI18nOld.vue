@@ -1,30 +1,27 @@
 <template>
   <p>{{ $t('hello') }}</p>
   <button @click = "openModalWindow">Open MODAL</button>
-   <widget-container-modal/>
+  <widget-container-modal/>
 
-  <button type="button" class="btn btn-primary" @click="showModal=true">Open a modal</button> -->
+  <button type="button" class="btn btn-primary" @click="showModal=true">Open a modal</button>
   <div v-if="showModal" class="modal-mask">
-  <div class="modal-wrapper">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="btn-close" @click="showModal = false" aria-label="Close"></button>
+    <div class="modal-wrapper">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button type="button" class="btn-close" @click="showModal = false" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <VueModalWindow/>
+          </div>
         </div>
-        <div class="modal-body">
-          <VueModalWindow/>
-        </div>
-
-      </div>
       </div>
     </div>
   </div>
 </template>
 
-
 <style scoped>
-
 .modal-mask {
   position: fixed;
   z-index: 1000;

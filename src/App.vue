@@ -19,15 +19,10 @@
     },
     data() {
       return {
-      cssPath: '',
-      globalData: 'GLOBAL TEXT'
+      cssPath: ''
       }
     },
     methods: {
-      lamaCall()
-      {
-        console.log("LAMA CALL");
-      },
       setTheme1() {
         console.log("SET THEME 1");
         this.cssPath = "css/theme1.css";
@@ -62,8 +57,6 @@
       getTheme() {
         return localStorage.getItem("user-theme");
       }
-
-
     },
     mounted() {
       console.log("MOUNTED APP");

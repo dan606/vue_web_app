@@ -1,10 +1,6 @@
 <template>
   <div class="about">
-    <!-- <h1>This is an about page</h1> -->
     <h1>{{responseAxios}}</h1>
-    <!-- <h2>{{ responseAxios }}</h2> -->
-    <br>
-    <p>{{ globData }}</p>
   </div>
 </template>
 
@@ -26,7 +22,6 @@ export default {
   data(){
     return {
       lamaMsg: 'TEST',
-      globData: this.$root.globalData,
       responseAxios: 'LAMA'
     }
   },

@@ -1,6 +1,14 @@
 <template>
-        <h1>{{ $t("hello") }}</h1>
-        <h2>{{ text }}</h2>
+        <Transition>
+            <div class="alert alert-success" v-show="isLoginSuccess" role="alert">
+                Login success
+            </div>
+        </Transition>
+        <Transition>
+            <div class="alert alert-danger" v-show="isLoginAttempFailed" role="alert">
+                Login {{loginFailedText}}
+            </div>
+        </Transition>
         <input type="email" class="form-control" id="emailInput" placeholder="email" v-model="mail">
         <input type="password" class="form-control" id="passwordInput" placeholder="password" v-model="password">
         <button type="button" class="btn btn-primary" @click="login">Login</button>
@@ -15,7 +23,9 @@ export default {
         return {
             mail: '',
             password: '',
-            text: 'LAMPA'
+            isLoginSuccess: false,
+            isLoginAttempFailed: false,
+            loginFailedText: ''
         }
     },
     methods: {
@@ -36,12 +46,47 @@ export default {
                 password: this.password
             })
             .then(
-                response => {this.text = response.data, console.log(response)}
+                response => {
+                    console.log(response.data);
+                    if(response.data === 'success')
+                    {
+                        this.isLoginSuccess = true;
+                        this.isLoginAttempFailed = false;
+                    }
+                    else
+                    {
+                        this.isLoginSuccess = false;
+                        this.isLoginAttempFailed = true;
+                        this.loginFailedText = response.data
+                    }
+                    setTimeout(() => {
+                        this.isLoginSuccess = false;
+                        this.isLoginAttempFailed = false;
+                    }, 5000)
+                }
             )
             .catch(
-                error => console.log(error)
+                error => {
+                    console.log(error)
+                    this.isLoginSuccess = false;
+                    this.isLoginAttempFailed = true;
+                    this.loginFailedText = 'failed, login server in unrechable'
+                }
             )
         }
     }
 }
 </script>
+
+<style>
+    /* we will explain what these classes do next! */
+    .v-enter-active,
+    .v-leave-active {
+    transition: opacity 1s ease;
+    }
+
+    .v-enter-from,
+    .v-leave-to {
+    opacity: 0;
+    }
+</style>
